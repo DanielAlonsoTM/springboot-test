@@ -20,8 +20,7 @@ CREATE TABLE IF NOT EXISTS ayc.commerce (
   creation_date     TIMESTAMP     NOT NULL DEFAULT NOW(),
   update_date       TIMESTAMP     NOT NULL DEFAULT NOW(),
 
-  CONSTRAINT commerce_id_pk 	PRIMARY KEY (id),
-  CONSTRAINT id_actividad_economica_fk 				FOREIGN KEY (id_act_economica) REFERENCES public.pub_act_economica_giro_mcc(id)
+  CONSTRAINT commerce_id_pk PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS ayc.branch (
