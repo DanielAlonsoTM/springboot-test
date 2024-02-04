@@ -2,17 +2,17 @@ package TestDanielin.TestDanielin.models;
 
 import java.time.LocalDate;
 
-public class eCommerce {
+public class Ecommerce {
     private Long id;
     private String commerce_rut;
     private String commerce_name;
     private String commerce_address;
     private LocalDate update_date;
 
-    public eCommerce(){
+    public Ecommerce(){
     }
 
-    public eCommerce(Long id,
+    public Ecommerce(Long id,
                      String commerce_rut,
                      String commerce_name,
                      String commerce_address,
@@ -24,7 +24,7 @@ public class eCommerce {
         this.update_date = update_date;
     }
 
-    public eCommerce(String commerce_rut,
+    public Ecommerce(String commerce_rut,
                      String commerce_name,
                      String commerce_address,
                      LocalDate update_date) {
