@@ -1,6 +1,6 @@
 package TestDanielin.TestDanielin.controllers;
 
-import TestDanielin.TestDanielin.Services.TerminalService;
+import TestDanielin.TestDanielin.services.TerminalService;
 import TestDanielin.TestDanielin.models.Terminal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

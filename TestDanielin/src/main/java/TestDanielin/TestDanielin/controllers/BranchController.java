@@ -1,6 +1,6 @@
 package TestDanielin.TestDanielin.controllers;
 
-import TestDanielin.TestDanielin.Services.BranchService;
+import TestDanielin.TestDanielin.services.BranchService;
 
 import TestDanielin.TestDanielin.models.Branch;
 

@@ -1,22 +1,35 @@
 package TestDanielin.TestDanielin.models;
 
-import java.time.LocalDate;
+import jakarta.persistence.*;
 
-public class Ecommerce {
+import java.time.LocalDate;
+@Entity
+@Table
+public class commerce {
+    @Id
+    @SequenceGenerator(
+            name = "ecommerce_sequence",
+            sequenceName = "ecommerce_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "ecommerce_sequence"
+    )
     private Long id;
     private String commerce_rut;
     private String commerce_name;
     private String commerce_address;
     private LocalDate update_date;
 
-    public Ecommerce(){
+    public commerce(){
     }
 
-    public Ecommerce(Long id,
-                     String commerce_rut,
-                     String commerce_name,
-                     String commerce_address,
-                     LocalDate update_date) {
+    public commerce(Long id,
+                    String commerce_rut,
+                    String commerce_name,
+                    String commerce_address,
+                    LocalDate update_date) {
         this.id = id;
         this.commerce_rut = commerce_rut;
         this.commerce_name = commerce_name;
@@ -24,10 +37,10 @@ public class Ecommerce {
         this.update_date = update_date;
     }
 
-    public Ecommerce(String commerce_rut,
-                     String commerce_name,
-                     String commerce_address,
-                     LocalDate update_date) {
+    public commerce(String commerce_rut,
+                    String commerce_name,
+                    String commerce_address,
+                    LocalDate update_date) {
         this.commerce_rut = commerce_rut;
         this.commerce_name = commerce_name;
         this.commerce_address = commerce_address;

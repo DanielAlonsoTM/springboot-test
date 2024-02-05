@@ -1,4 +1,4 @@
-package TestDanielin.TestDanielin.Services;
+package TestDanielin.TestDanielin.services;
 
 import TestDanielin.TestDanielin.models.Terminal;
 import org.springframework.stereotype.Service;
